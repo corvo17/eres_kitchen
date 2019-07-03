@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPressed">#21a1cc</color>
+    <color name="eres_back">#23caa1</color>
+    <color name="category_item_back">#c7e3f1ea</color>
+    <color name="white">#ffffff</color>
+    <color name="back_xira">#dceaeaea</color>
+    <color name="back_xiraaa">#94aea6a6</color>
+
+    <color name="toolbar_background">#00CBA0</color>
+</resources>

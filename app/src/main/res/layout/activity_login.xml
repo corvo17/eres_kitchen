@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/eres_back"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.25" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chief_cook" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            android:background="#00000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="8dp">
+
+            <Spinner
+                android:id="@+id/EDLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:background="@color/eres_back"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+      <ImageView
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_arrow_drop_down"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="300dp"
+        android:layout_height="3dp"
+        android:background="@color/white"
+        app:layout_constraintRight_toRightOf="@id/constraintLayout2"
+        app:layout_constraintLeft_toLeftOf="@id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout2"/>
+
+    <com.andrognito.pinlockview.IndicatorDots
+        android:id="@+id/indicator_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:dotDiameter="16dp"
+        app:dotSpacing="16dp"
+        app:layout_constraintLeft_toLeftOf="@id/constraintLayout2"
+        app:layout_constraintRight_toRightOf="@id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
+        app:pinLength="4" />
+
+    <com.andrognito.pinlockview.PinLockView
+        android:id="@+id/pin_lock_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="48dp"
+        app:dotFilledBackground="@color/white"
+        app:keypadDeleteButtonSize="48dp"
+        app:keypadHorizontalSpacing="48dp"
+        app:keypadShowDeleteButton="true"
+        app:keypadTextSize="48sp"
+        app:keypadVerticalSpacing="38dp"
+        app:layout_constraintEnd_toEndOf="@id/indicator_dots"
+        app:layout_constraintStart_toStartOf="@id/indicator_dots"
+        app:layout_constraintTop_toBottomOf="@id/indicator_dots" />
+
+
+
+</android.support.constraint.ConstraintLayout>

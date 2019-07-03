@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.StopListActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/eres_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/stop_list"
+            android:textSize="22dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/toolbar_shadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingTop="4dp"
+        android:layout_marginTop="4dp"
+        android:id="@+id/recycler_top_buttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="4dp"
+        android:layout_marginBottom="8dp"
+        android:paddingRight="4dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:spanCount="1" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/conSearch"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@drawable/back_btn_ok"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/eTSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:hint="@string/chuck_search"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/stopListLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/back_btn_ok"
+        android:padding="8dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conSearch"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_top_buttons">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/back_btn_ok"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/confirm"
+        android:textSize="24sp"
+        android:onClick="goBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/stopListRight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/back_btn_ok"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/back_btn_cancel"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:onClick="deleteAll"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/stop_list_tv"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/stop_list"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recycler_top_buttons"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".activities.TrashActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_background"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/back"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/trash_title"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/clear_trash_button"
+            app:layout_constraintStart_toEndOf="@+id/backButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/clear_trash_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_white_background"
+            android:paddingRight="56dp"
+            android:paddingLeft="10dp"
+            android:text="@string/clear_trash"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        >
+        <android.support.v7.widget.CardView
+            android:layout_weight="50"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/toolbar_background"
+            app:cardCornerRadius="10dp"
+            android:layout_marginRight="4dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/deleted_products"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:id="@+id/deletedRV"
+                    />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_weight="50"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/toolbar_background"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="4dp"
+            >
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textAlignment="center"
+                    android:text="@string/recovering_products"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recoveryRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <Button
+                        android:id="@+id/clear_restore_items_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="50"
+                        android:background="@drawable/button_around_background"
+                        android:text="@string/clear_trash_button" />
+
+                    <Button
+                        android:id="@+id/restore_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="50"
+                        android:background="@drawable/button_around_background"
+                        android:text="@string/restore_trash_button" />
+
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AcceptedOrdersFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rVOrderListAccept"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:background="@drawable/back_right_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/tVTableNameAccept"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline6" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/tVAcceptAccept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline6"
+        app:layout_constraintTop_toBottomOf="@id/tVTableNameAccept">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rVSingleOrderAccept"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_subcategory"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp">
+
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/tVAcceptAccept"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:background="@color/eres_back"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Готово"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline6" />
+
+
+</android.support.constraint.ConstraintLayout>

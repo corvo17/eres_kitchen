@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kitchen">ERES Кухня</string>
+    <string name="new_orders">Новые заказы</string>
+    <string name="accepted_orders">Принятые заказы</string>
+    <string name="chief_cook">ERES ШЕФ-ПОВАР</string>
+    <string name="aorm">AORM</string>
+    <string name="stop_list">Стоп лист</string>
+    <string name="served_meals">CBЗ</string>
+    <string name="banquet">Банкет</string>
+    <string name="setting">Настройки</string>
+    <string name="exit">Выход</string>
+    <string name="editor">ERES РЕДАКТОР</string>
+    <string name="add_new_meal">Добавить новую еду</string>
+    <string name="name">Имя</string>
+    <string name="list_of_new_meals">Список новых блюд</string>
+    <string name="description">Описание</string>
+    <string name="ingredient">Ингредиент</string>
+    <string name="category">Категория</string>
+    <string name="clarification">Осветление</string>
+    <string name="choose_photo">Выбрать фото</string>
+    <string name="cansel">Отмена</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="confirm_all">Подтвердить все</string>
+    <string name="ingredientt">ИНГРЕДИЕНТ</string>
+    <string name="delete">УДАЛИТЬ</string>
+    <string name="done">Готово</string>
+    <string name="edit_meals">РЕДАКТИРОВАТЬ ПИТАНИЯ</string>
+    <string name="edited_meals_list">Отредактированный список блюд</string>
+    <string name="edit">РЕДАКТИРОВАТЬ</string>
+    <string name="toast_confirm">для подтверждения повторного нажатия !!!</string>
+
+
+    <string name="settings">ERES Hастройки</string>
+    <string name="preview">Предварительный Просмотр</string>
+
+    <string name="user_name">имя пользователя</string>
+    <string name="password">пароль</string>
+    <string name="enter">ВОЙТИ</string>
+    <string name="massa">Bес</string>
+    <string name="refactor">Рефторные блюда</string>
+    <string name="editMeals">Редактировать питание</string>
+    <string name="dona">Шт</string>
+
+    <string name="clear_trash">Очистить корзину</string>
+    <string name="deleted_products">Удаленные блюда</string>
+    <string name="recovering_products">Востановить блюда</string>
+    <string name="clear_trash_button">Очистить</string>
+    <string name="restore_trash_button">Востановить</string>
+    <string name="trash_title">Корзина</string>
+    <string name="add">Добавить</string>
+    <string name="price">Цена</string>
+    <string name="summ">Cyм</string>
+</resources>

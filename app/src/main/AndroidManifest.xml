@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kitchen.eres.com.kitchen">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.OrdersActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.ROAMActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.StopListActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.ServerMActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.SettingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ROAMCategoryActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activities.TrashActivity" />
+        <activity android:name=".activities.CoverterToKotlin"></activity>
+    </application>
+
+</manifest>

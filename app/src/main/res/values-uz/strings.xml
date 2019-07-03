@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kitchen">ERES Oshxona</string>
+    <string name="new_orders">Yangi buyurtma</string>
+    <string name="accepted_orders">Buyurtma qabul qilindi</string>
+    <string name="chief_cook">ERES Bosh Oshpaz</string>
+    <string name="aorm">AORM</string>
+    <string name="stop_list">To\'xtatish ro\'yxati</string>
+    <string name="served_meals">Ovqatlarga xizmat qilindi</string>
+    <string name="banquet">Banket</string>
+    <string name="setting">Sozlamalar</string>
+    <string name="exit">Chqish</string>
+
+    <string name="editor">ERES Muharrir</string>
+    <string name="add_new_meal">Yangi ovqat qo\'shish</string>
+    <string name="name">Nomi</string>
+    <string name="list_of_new_meals">Yangi ovqatlar ro\'yxati</string>
+    <string name="description">Ta\'rif</string>
+    <string name="ingredient">Tarkibi</string>
+    <string name="category">Category</string>
+    <string name="clarification">Tushuntirish</string>
+    <string name="choose_photo">Rasmni tanlang</string>
+    <string name="cansel">Bekor qilish</string>
+    <string name="confirm">Tasdiqlash</string>
+    <string name="confirm_all">Hammasini tasdiqlash</string>
+    <string name="ingredientt">TARKIBI</string>
+    <string name="delete">O\'CHIRISH</string>
+    <string name="done">Bajarildi</string>
+    <string name="edit_meals">Ovqatni o\'zgartirish</string>
+    <string name="edited_meals_list">Ovqatlar listi o\'zgardi</string>
+    <string name="edit">O\'ZGARTIR</string>
+    <string name="toast_confirm">Tasdiqlash uchun yana bir marta bosing !!!</string>
+
+    <string name="settings">ERES Sozlamalar</string>
+    <string name="preview">Avvaldan ko\'rish</string>
+
+    <string name="user_name">foydalanuvchi ismi</string>
+    <string name="password">parol</string>
+    <string name="enter">KIRISH</string>
+    <string name="massa">Og\'irligi</string>
+    <string name="refactor">Taomlarni O\'zgartirish</string>
+    <string name="editMeals">Taomlarga O\'zgartirish kiritish</string>
+    <string name="dona">Dona</string>
+
+    <string name="clear_trash">Savatni tozalash</string>
+    <string name="deleted_products">O`chirilganlar ro`yxati </string>
+    <string name="recovering_products">Tiklanish ro`yxati</string>
+    <string name="clear_trash_button">Tozalash</string>
+    <string name="restore_trash_button">Tiklash</string>
+    <string name="trash_title">O`chirilgan taomlar</string>
+    <string name="add">Qo\'shish</string>
+    <string name="price">Narx</string>
+    <string name="summ">So\'m</string>
+
+</resources>
